@@ -10,20 +10,20 @@ var assert = require("assert");
 
 describe("Thisable",function() {
 
-//	require("promises-aplus-tests").mocha({
-//		deferred: function () {
-//			var promise = new Thisable();
-//			return {
-//				promise: promise,
-//				resolve: function (value) {
-//					return promise.fulfill(value);
-//				},
-//				reject: function (reason) {
-//					return promise.reject(reason);
-//				}
-//			};
-//		}
-//	});
+	require("promises-aplus-tests").mocha({
+		deferred: function () {
+			var promise = new Thisable();
+			return {
+				promise: promise,
+				resolve: function (value) {
+					return promise.fulfill(value);
+				},
+				reject: function (reason) {
+					return promise.reject(reason);
+				}
+			};
+		}
+	});
 
 	it("context-then",function(done) {
 		var obj = {a:1,b:2,c:3};
