@@ -1,6 +1,6 @@
 {
   "name": "thisable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promises with context.",
   "keywords": [
     "thisable",

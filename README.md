@@ -11,7 +11,7 @@ npm install thisable
 
 ## Usage
 
-The only difference between `Thenable` and `Thisable` is the `.bind` method which sets the `this` variable to be used within callbacks.
+The only difference between `Thenable` and `Thisable` is the `.bind` method which sets the `this` variable to be used within callbacks. If `.bind` is not called, it will behave just like the specification.
 
 ```js
 var Thisable = require("thisable");
